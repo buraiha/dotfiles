@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaultsauto[]
+// 全体的に使い慣れたemacs風な感じになってます。
+[
+    // VSCodeで、エディタとターミナルを往復できるショートカットの定義
+    // 往
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    // 復
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorFocus"
+    },
+    // undoをemacs風ctrl+/で
+    {
+        "key": "ctrl+/",
+        "command": "undo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    // redo
+    {
+        "key": "shift+ctrl+/",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+      },
+]

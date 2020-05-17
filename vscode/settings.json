@@ -1,0 +1,18 @@
+{
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "editor.renderWhitespace": "all",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 16,
+    "markdown.extension.list.indentationSize": "inherit",
+    "vsonline.accountProvider": "Microsoft",
+    "editor.fontSize": 16,
+    "editor.cursorStyle": "block",
+    "editor.wordWrap": "on",
+    "timeline.pageSize": 0,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "git.autofetch": true
+}
