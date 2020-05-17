@@ -1,7 +1,6 @@
 {
     "workbench.activityBar.visible": true,
     "workbench.sideBar.location": "left",
-    "editor.renderWhitespace": "all",
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontSize": 16,
@@ -14,5 +13,6 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "editor.renderWhitespace": "all"
 }

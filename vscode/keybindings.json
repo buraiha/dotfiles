@@ -26,4 +26,49 @@
         "command": "redo",
         "when": "textInputFocus && !editorReadonly"
       },
+    // 次を検索
+    {
+        "key": "ctrl+shift+n",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+      },
+    // 前を検索
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    // エディタを右に分割
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorFocus"
+    },
+    // エディタを下に分割
+    {
+        "key": "ctrl+shift+u",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorFocus"
+    },
+    // エディタグループ右移動
+    {
+        "key": "ctrl+shift+right",
+        "command": "workbench.action.focusRightGroup",
+    },
+    // エディタグループ左移動
+    {
+        "key": "ctrl+shift+left",
+        "command": "workbench.action.focusLeftGroup",
+    },
+    // エディタグループ上移動
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    // エディタグループ下移動
+    {
+        "key": "ctrl+shift+down",
+        "command": "workbench.action.focusBelowGroup"
+    },
+
 ]
