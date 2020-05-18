@@ -70,5 +70,21 @@
         "key": "ctrl+shift+down",
         "command": "workbench.action.focusBelowGroup"
     },
-
+    // 最後の編集位置へ移動
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.navigateToLastEditLocation"
+    },
+    // ファイルの先頭へ移動
+    {
+        "key": "ctrl+shift+,",
+        "command": "cursorTop",
+        "when": "editorFocus"
+    },
+    // ファイルの末尾へ移動
+    {
+        "key": "ctrl+shift+.",
+        "command": "cursorBottom",
+        "when": "editorFocus"
+    }
 ]
