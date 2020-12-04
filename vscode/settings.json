@@ -14,5 +14,15 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
     "git.autofetch": true,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "codespaces.accountProvider": "Microsoft",
+    "editor.fontFamily": "Ricty Diminished, Menlo",
+    "python.languageServer": "Microsoft",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "editor.lineHeight": 16
 }
