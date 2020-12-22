@@ -29,10 +29,9 @@ then
 fi
 ln -s $DORFILESDIR/git/.gitconfig $HOME/.gitconfig
 
-#install Visual Studio Code settings
-if [ $OS == 'Mac' ]
-then
-	cd $HOME/Library/"Application Support"/Code/User/
+# mac setting function 
+function setting_mac () {
+	cd "$1";
 
 	# settings.json
 	if [ -f settings.json ]
@@ -54,6 +53,24 @@ then
 		rm -rf snippets
 	fi
 	ln -s $DORFILESDIR/vscode/snippets .
+}
+
+#install Visual Studio Code settings
+if [ $OS == 'Mac' ]
+then
+	TARGET_PATH1="$HOME/Library/Application Support/Code/User/"
+	if [ -d "$TARGET_PATH1" ];
+	then
+		echo "setting 1"
+		setting_mac "$TARGET_PATH1"
+	fi
+
+	TARGET_PATH2="$HOME/Library/Application Support/Code - Insiders/User/"
+	if [ -d "$TARGET_PATH2" ];
+	then
+		echo "setting 2"
+		setting_mac "$TARGET_PATH2"
+	fi
 
 fi
 
