@@ -3,10 +3,10 @@
     "workbench.sideBar.location": "left",
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 18,
     "markdown.extension.list.indentationSize": "inherit",
     "vsonline.accountProvider": "Microsoft",
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.cursorStyle": "block",
     "editor.wordWrap": "on",
     "timeline.pageSize": 0,
@@ -17,12 +17,18 @@
     "editor.renderWhitespace": "all",
     "codespaces.accountProvider": "Microsoft",
     "editor.fontFamily": "Ricty Diminished, Menlo",
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
             "filenamePattern": "*.ipynb"
+        },
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
         }
     ],
-    "editor.lineHeight": 16
+    "editor.lineHeight": 20,
+    "python.insidersChannel": "weekly",
+    "editor.codeLensFontSize": 18
 }
