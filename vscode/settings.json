@@ -18,13 +18,20 @@
     "codespaces.accountProvider": "Microsoft",
     "editor.fontFamily": "Ricty Diminished, Menlo",
     "python.languageServer": "Pylance",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "editor.lineHeight": 20,
     "python.insidersChannel": "weekly",
-    "editor.codeLensFontSize": 18
+    "editor.codeLensFontSize": 18,
+    "remote.SSH.remotePlatform": {
+        "52.183.99.223": "linux",
+        "reservation.oinabu.net": "linux",
+        "sv003.yorozu-sys.net": "linux"
+    },
+    "remote.SSH.useLocalServer": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }
