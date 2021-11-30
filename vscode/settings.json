@@ -27,11 +27,13 @@
     "remote.SSH.remotePlatform": {
         "52.183.99.223": "linux",
         "reservation.oinabu.net": "linux",
-        "sv003.yorozu-sys.net": "linux"
+        "sv003.yorozu-sys.net": "linux",
+        "test": "linux"
     },
     "remote.SSH.useLocalServer": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "editor.quickSuggestions": true
 }
