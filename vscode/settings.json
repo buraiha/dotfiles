@@ -3,10 +3,10 @@
     "workbench.sideBar.location": "left",
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 16,
     "markdown.extension.list.indentationSize": "inherit",
     "vsonline.accountProvider": "Microsoft",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.cursorStyle": "block",
     "editor.wordWrap": "on",
     "timeline.pageSize": 0,
@@ -25,10 +25,12 @@
     "python.insidersChannel": "weekly",
     "editor.codeLensFontSize": 18,
     "remote.SSH.remotePlatform": {
-        "52.183.99.223": "linux",
         "reservation.oinabu.net": "linux",
         "sv003.yorozu-sys.net": "linux",
-        "test": "linux"
+        "104.214.136.134": "linux",
+        "20.63.209.13": "linux",
+        "23.100.105.108": "linux",
+        "dockertest": "linux"
     },
     "remote.SSH.useLocalServer": false,
     "notebook.cellToolbarLocation": {
