@@ -1,7 +1,6 @@
 {
     "workbench.activityBar.visible": true,
     "workbench.sideBar.location": "left",
-    "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontSize": 16,
     "markdown.extension.list.indentationSize": "inherit",
@@ -37,5 +36,9 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    }
 }
