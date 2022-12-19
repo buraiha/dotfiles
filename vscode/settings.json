@@ -25,11 +25,7 @@
     "editor.codeLensFontSize": 18,
     "remote.SSH.remotePlatform": {
         "reservation.oinabu.net": "linux",
-        "sv003.yorozu-sys.net": "linux",
-        "104.214.136.134": "linux",
-        "20.63.209.13": "linux",
-        "23.100.105.108": "linux",
-        "dockertest": "linux"
+        "sv003.yorozu-sys.net": "linux"
     },
     "remote.SSH.useLocalServer": false,
     "notebook.cellToolbarLocation": {
@@ -40,5 +36,8 @@
         "comments": "on",
         "strings": "on",
         "other": "on"
+    },
+    "workbench.startupEditor": "none",
+    "[python]": {
     }
 }
