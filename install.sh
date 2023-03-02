@@ -22,7 +22,7 @@ echo -n "install for dotfiles..."
 if [ -f $HOME/.gitconfig ]; then
 	rm -f $HOME/.gitconfig
 fi
-ln -s ./.gitconfig $HOME/.gitconfig
+ln -s $PWD/.gitconfig $HOME/.gitconfig
 
 # mac setting function 
 function setting_mac () {
@@ -32,19 +32,19 @@ function setting_mac () {
 	if [ -f settings.json ]; then
 		rm -f settings.json
 	fi
-	ln -s ./vscode/settings.json .
+	ln -s $PWD/vscode/settings.json .
 
 	# keybindings.json
 	if [ -f keybindings.json ]; then
 		rm -f keybindings.json
 	fi
-	ln -s ./vscode/keybindings.json .
+	ln -s $PWD/vscode/keybindings.json .
 
 	# snippets directory
 	if [ -d snippets ]; then
 		rm -rf snippets
 	fi
-	ln -s ./vscode/snippets .
+	ln -s $PWD/vscode/snippets .
 }
 
 #install Visual Studio Code settings
