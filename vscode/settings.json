@@ -2,7 +2,7 @@
     "workbench.activityBar.visible": true,
     "workbench.sideBar.location": "left",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 14,
     "markdown.extension.list.indentationSize": "inherit",
     "vsonline.accountProvider": "Microsoft",
     "editor.fontSize": 16,
@@ -39,5 +39,6 @@
     },
     "workbench.startupEditor": "none",
     "[python]": {
+        "editor.formatOnType": true
     }
 }
