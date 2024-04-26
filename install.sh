@@ -47,21 +47,21 @@ function setting_mac () {
 	ln -s $PWD/vscode/snippets .
 }
 
-#install Visual Studio Code settings
-if [ $OS == 'Mac' ]; then
-	TARGET_PATH1="$HOME/Library/Application Support/Code/User/"
-	if [ -d "$TARGET_PATH1" ]; then
-		echo "setting 1"
-		setting_mac "$TARGET_PATH1"
-	fi
-
-	TARGET_PATH2="$HOME/Library/Application Support/Code - Insiders/User/"
-	if [ -d "$TARGET_PATH2" ]; then
-		echo "setting 2"
-		setting_mac "$TARGET_PATH2"
-	fi
-
-fi
+# install Visual Studio Code settings
+# VS Codeの設定はgithubにログインすることで同期されるようにしたので、以下の処理は不要。
+# if [ $OS == 'Mac' ]; then
+#	TARGET_PATH1="$HOME/Library/Application Support/Code/User/"
+#	if [ -d "$TARGET_PATH1" ]; then
+#		echo "setting 1"
+#		setting_mac "$TARGET_PATH1"
+#	fi
+#
+#	TARGET_PATH2="$HOME/Library/Application Support/Code - Insiders/User/"
+#	if [ -d "$TARGET_PATH2" ]; then
+#		echo "setting 2"
+#		setting_mac "$TARGET_PATH2"
+#	fi
+# fi
 
 cd $HOME
 
