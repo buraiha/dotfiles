@@ -1,0 +1,10 @@
+{
+  "theme": "system",
+  "interfaceFontFamily": "UDEV Gothic JPDOC",
+  "textFontFamily": "UDEV Gothic,UDEV Gothic JPDOC",
+  "monospaceFontFamily": "UDEV Gothic JPDOC",
+  "baseFontSizeAction": true,
+  "baseFontSize": 12,
+  "translucency": false,
+  "showRibbon": true
+}

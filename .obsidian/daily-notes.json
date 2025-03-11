@@ -1,0 +1,6 @@
+{
+  "autorun": true,
+  "format": "010[_journaling]/YYYY/MM/YYYYMMDD[_journal]",
+  "folder": "",
+  "template": "template_dailynote.md"
+}

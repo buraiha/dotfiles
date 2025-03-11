@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "003748645267fcda",
+    "type": "split",
+    "children": [
+      {
+        "id": "37c65c696ba58ad5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "128df9795cf3bfe4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "010_journaling/2025/03/20250311_journal.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "20250311_journal"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "622becd70d13b75d",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c9185b8afa2b21f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5cd6c2770c77000",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "74b8e9c30a23ebb8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "3d49d56ac29b4e00",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "000a3a62987e0cc6",
+    "type": "split",
+    "children": [
+      {
+        "id": "031a42f1875a3298",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83e259b2ff005acd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "階層1/階層1のドキュメント.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "階層1のドキュメントへのバックリンク"
+            }
+          },
+          {
+            "id": "230e20bab1aec059",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "ba29a0dcfa3e25d7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f557d3257dda7c6e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "010_journaling/2025/03/20250311_journal.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "20250311_journalのアウトライン"
+            }
+          },
+          {
+            "id": "046e127515bf8d30",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "629c9a175a21dc55",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "128df9795cf3bfe4",
+  "lastOpenFiles": [
+    "010_journaling/2025/03/hogehoge.md.md",
+    "010_journaling/2025/03/20250311_journal.md",
+    "2025-03-10.md",
+    "階層1/階層1のドキュメント.md",
+    "階層1/階層2/階層2のドキュそめんと.md",
+    "階層1/階層2/スクリーンショット 2025-03-09 17.56.46.png",
+    "test2.md",
+    "Pasted image 20250310052217.png",
+    "Welcome.md",
+    "010_journaling/2025/03/20250310_journal.md",
+    "template_dailynote.md.md",
+    "test1.md",
+    "無題のファイル.canvas",
+    "template_dailynote.md 1.md",
+    "無題のファイル 2.canvas",
+    "無題のファイル 1.canvas",
+    "TEMPLATE.md",
+    "010_journaling/2025/03/スクリーンショット 2025-03-11 8.38.49.png",
+    "010_journaling/2025/03",
+    "010_journaling/2025",
+    "010_journaling",
+    "010_journ午前2025/03/10ing/252025/03/2025-03-10_journ午前2025/03/10.md",
+    "010/2025/03/2025-03-10.md",
+    "010_journ午前2025/03/10ing/252025/03/2025-03-10_journ午前2025/03",
+    "010_journ午前2025/03/10ing/252025/03/2025-03-10_journ午前2025",
+    "010_journ午前2025/03/10ing/252025/03",
+    "010_journ午前2025/03/10ing/252025",
+    "010_journ午前2025/03/10ing",
+    "010_journ午前2025/03",
+    "010_journ午前2025",
+    "010/2025/02/2025-03-10.md",
+    "20250310_journ午前2025/03/10ing.md"
+  ]
+}
