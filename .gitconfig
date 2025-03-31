@@ -5,3 +5,7 @@
 	email = tf@yorozu-sys.net
 
 
+[core]
+	autocrlf = false
+	whitespace = cr-at-eol
+	quotepath = false
