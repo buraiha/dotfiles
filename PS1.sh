@@ -1,7 +1,22 @@
-# Gitブランチを表示する関数
-parse_git_branch() {
+# Gitブランチとリモート比較を表示する関数
+parse_git_branch_status() {
   if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-    echo "GIT:$(git branch --show-current 2>/dev/null)"
+    branch=$(git branch --show-current 2>/dev/null)
+    if git rev-parse --abbrev-ref @{upstream} >/dev/null 2>&1; then
+      read behind ahead <<<$(git rev-list --left-right --count @{upstream}...HEAD 2>/dev/null)
+      if [ "$ahead" -gt 0 ] && [ "$behind" -gt 0 ]; then
+        marker="±"   # diverged
+      elif [ "$ahead" -gt 0 ]; then
+        marker="↑"   # ahead
+      elif [ "$behind" -gt 0 ]; then
+        marker="↓"   # behind
+      else
+        marker="="   # up to date
+      fi
+      echo "GIT:${branch}${marker}"
+    else
+      echo "GIT:${branch}"
+    fi
   fi
 }
 
@@ -19,7 +34,7 @@ jobs_count() {
 export PS1="\n[\[\033[01;33m\]\$(date '+%Y-%m-%d %H:%M:%S') \
 \[\033[01;36m\]\$(jobs_count) \
 HIST:\! \
-\[\033[01;35m\]\$(parse_git_branch) \
+\[\033[01;35m\]\$(parse_git_branch_status) \
 \[\033[01;32m\]\$(tmux_session_name)\[\033[00m\]]\n\
 \[\033[01;32m\]\u@\h\[\033[00m\]:\
 \[\033[01;34m\]\w\[\033[00m\]\$ "
