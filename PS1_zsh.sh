@@ -65,8 +65,6 @@ git_flags() {
   print -r -- "$out"
 }
 
-
 setopt PROMPT_SUBST
 
-# zshのプロンプトは PS1 より PROMPT が分かりやすい
-PROMPT=$'%{\e]633;A\a%}\n[%{\e[01;33m%}%D{%Y-%m-%d %H:%M:%S}%{\e[00m%} %{\e[01;36m%}$(jobs_count)%{\e[00m%} HIST:%! %{\e[01;35m%}$(parse_git_branch_status)$(git_flags)%{\e[00m%} %{\e[01;32m%}$(tmux_session_name)%{\e[00m%}$(ssh_tag)]\n%{\e[01;32m%}%n@%m%{\e[00m%}:%{\e[01;34m%}%~%{\e[00m%}%(!.#.$)$(prompt_status) %{\e]633;B\a%}'
+PROMPT=$'%{\e]633;A\a%}\n[%{\e[01;33m%}%D{%Y-%m-%d %H:%M:%S}%{\e[00m%} %{\e[01;36m%}$(jobs_count)%{\e[00m%} HIST:%! %{\e[01;35m%}$(parse_git_branch_status)$(git_flags)%{\e[00m%} %{\e[01;32m%}$(tmux_session_name)%{\e[00m%}$(ssh_tag)]\n%{\e[01;32m%}%n@%m%{\e[00m%}:%{\e[01;34m%}%~%{\e[00m%}%(!.#.$)%(?.. %{\e[01;31m%}✗%?%{\e[00m%}) %{\e]633;B\a%}'
