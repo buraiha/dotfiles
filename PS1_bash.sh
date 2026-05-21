@@ -1,3 +1,4 @@
+# プロンプト設定
 # ---- colors / OSC (bash) ----
 C_RESET='\[\033[00m\]'
 C_YELLOW='\[\033[01;33m\]'
@@ -41,9 +42,9 @@ parse_git_branch_status() {
     else
       marker="="
     fi
-    echo "GIT:${branch}${marker}"
+    echo "GIT: ${branch} ${marker}"
   else
-    echo "GIT:${branch}"
+    echo "GIT: ${branch}"
   fi
 }
 
@@ -68,6 +69,14 @@ prompt_status() {
 ssh_tag() {
   [[ -n "$SSH_CONNECTION" || -n "$SSH_TTY" ]] || return 0
   printf ' %sSSH%s' '\[\033[01;31m\]' '\[\033[00m\]'
+}
+
+venv_tag() {
+  [[ -n "$VIRTUAL_ENV" ]] || return 0
+
+  local venv_name
+  venv_name=$(basename "$VIRTUAL_ENV")
+  printf ' %sVENV:%s%s' '\[\033[01;31m\]' "$venv_name" '\[\033[00m\]'
 }
 
 git_flags() {
@@ -98,14 +107,15 @@ git_flags() {
 __build_ps1() {
   local ec=$?
 
-  local jobs git tmux ssh status
+  local jobs git tmux ssh venv status
   jobs="$(jobs_count)"
   git="$(parse_git_branch_status)$(git_flags)"
   tmux="$(tmux_session_name)"
   ssh="$(ssh_tag)"
+  venv="$(venv_tag)"
   status="$(prompt_status "$ec")"
 
-  PS1="${OSC_A}\n[${C_YELLOW}\D{%Y-%m-%d %H:%M:%S}${C_RESET} ${C_CYAN}${jobs}${C_RESET} HIST:\\! ${C_MAGENTA}${git}${C_RESET} ${C_GREEN}${tmux}${C_RESET}${ssh}]\
+  PS1="${OSC_A}\n[${C_YELLOW}\D{%Y-%m-%d %H:%M:%S}${C_RESET} ${C_CYAN}${jobs}${C_RESET} HIST:\\! ${C_MAGENTA}${git}${C_RESET} ${C_GREEN}${tmux}${C_RESET}${ssh}${venv}]\
 \n${C_GREEN}\u@\h${C_RESET}:${C_BLUE}\w${C_RESET}\$${status} ${OSC_B}"
 }
 

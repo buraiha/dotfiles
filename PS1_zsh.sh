@@ -1,3 +1,4 @@
+# プロンプト設定
 parse_git_branch_status() {
   if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     local branch marker behind ahead
@@ -15,9 +16,9 @@ parse_git_branch_status() {
       else
         marker="="
       fi
-      echo "GIT:${branch}${marker}"
+      echo "GIT: ${branch} ${marker}"
     else
-      echo "GIT:${branch}"
+      echo "GIT: ${branch}"
     fi
   fi
 }
@@ -39,6 +40,14 @@ prompt_status() {
 ssh_tag() {
   [[ -n "$SSH_CONNECTION" || -n "$SSH_TTY" ]] || return 0
   echo " %{\e[01;31m%}SSH%{\e[00m%}"
+}
+
+venv_tag() {
+  [[ -n "$VIRTUAL_ENV" ]] || return 0
+
+  local venv_name
+  venv_name=${VIRTUAL_ENV:t}
+  echo " %{\e[01;31m%}VENV:${venv_name}%{\e[00m%}"
 }
 
 git_flags() {
@@ -67,4 +76,4 @@ git_flags() {
 
 setopt PROMPT_SUBST
 
-PROMPT=$'%{\e]633;A\a%}\n[%{\e[01;33m%}%D{%Y-%m-%d %H:%M:%S}%{\e[00m%} %{\e[01;36m%}$(jobs_count)%{\e[00m%} HIST:%! %{\e[01;35m%}$(parse_git_branch_status)$(git_flags)%{\e[00m%} %{\e[01;32m%}$(tmux_session_name)%{\e[00m%}$(ssh_tag)]\n%{\e[01;32m%}%n@%m%{\e[00m%}:%{\e[01;34m%}%~%{\e[00m%}%(!.#.$)%(?.. %{\e[01;31m%}✗%?%{\e[00m%}) %{\e]633;B\a%}'
+PROMPT=$'%{\e]633;A\a%}\n[%{\e[01;33m%}%D{%Y-%m-%d %H:%M:%S}%{\e[00m%} %{\e[01;36m%}$(jobs_count)%{\e[00m%} HIST:%! %{\e[01;35m%}$(parse_git_branch_status)$(git_flags)%{\e[00m%} %{\e[01;32m%}$(tmux_session_name)%{\e[00m%}$(ssh_tag)$(venv_tag)]\n%{\e[01;32m%}%n@%m%{\e[00m%}:%{\e[01;34m%}%~%{\e[00m%}%(!.#.$)%(?.. %{\e[01;31m%}✗%?%{\e[00m%}) %{\e]633;B\a%}'
